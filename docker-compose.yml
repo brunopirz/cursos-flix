@@ -5,17 +5,16 @@ services:
     image: mongo:6.0
     container_name: mongo
     restart: always
-    # As variáveis abaixo serão injetadas a partir deste arquivo .env
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}  # Usuário admin (guarde em local seguro)
-      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}  # Senha forte (guarde em local seguro)
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
     ports:
       - "27017:27017"
     volumes:
       - mongo_data:/data/db
     healthcheck:
       test: >
-        CMD-SHELL mongo --username ${MONGO_INITDB_ROOT_USERNAME} --password ${MONGO_INITDB_ROOT_PASSWORD} --authenticationDatabase admin --quiet --eval "if(db.runCommand({ ping: 1 }).ok === 1){ exit 0 } else { exit 1 }"
+        CMD-SHELL mongo --quiet --eval "if(db.runCommand({ ping: 1 }).ok === 1){ exit 0 } else { exit 1 }"
       interval: 10s
       timeout: 5s
       retries: 5
