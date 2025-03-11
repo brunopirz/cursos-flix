@@ -1,5 +1,4 @@
-version: '3.8'
-
+# Exemplo de docker-compose.yml (sem a linha "version")
 services:
   mongo:
     image: mongo:6.0
