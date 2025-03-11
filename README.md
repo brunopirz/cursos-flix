@@ -68,9 +68,11 @@ Construa e inicie os contêineres:
 
 Acesse a plataforma:
 
-Frontend: http://localhost:3000
+Frontend: http://localhost:3000 [ou http://(ip-do-servidor):3000]
 
-Backend API: http://localhost:5000
+Backend API: http://localhost:5000 [ou http://(ip-do-servidor):5000]
+
+**(PS: Não esqueça de liberar as portas do servidor no firewall. Use o Cloudflare para apontar o DNS A do seu domínio para o ip do servidor)**
 
 
 Verifique os logs:
