@@ -59,6 +59,7 @@ Cursos Flix é uma plataforma de streaming de cursos online inspirada na interfa
 Configure as variáveis de ambiente:
 
 **No diretório backend, edite um arquivo .env com as variáveis necessárias.**
+
 **No diretório raiz, edite o arquivo docker-compose.yml com as variáveis necessárias.**
 
 Construa e inicie os contêineres:
