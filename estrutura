@@ -1,0 +1,33 @@
+cursos-flix/
+├── backend/
+│   ├── controllers/
+│   │    ├── authController.js
+│   │    ├── courseController.js
+│   │    └── paymentController.js
+│   ├── middleware/
+│   │    └── auth.js
+│   ├── models/
+│   │    ├── User.js
+│   │    └── Course.js
+│   ├── config/
+│   │    └── db.js
+│   ├── server.js
+│   ├── package.json
+│   ├── Dockerfile
+│   └── .env
+├── frontend/
+│   ├── public/
+│   │    └── index.html
+│   ├── src/
+│   │    ├── components/
+│   │    │    ├── LandingPage.js
+│   │    │    ├── Signup.js
+│   │    │    ├── Login.js
+│   │    │    └── AdminDashboard.js
+│   │    ├── App.js
+│   │    ├── index.js
+│   │    └── styles/
+│   │         └── tailwind.css
+│   ├── package.json
+│   ├── Dockerfile
+└── docker-compose.yml
