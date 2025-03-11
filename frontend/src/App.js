@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LandingPage from './components/LandingPage.js';
-import Signup from './components/Signup.js';
-import Login from './components/Login.js';
-import AdminDashboard from './components/AdminDashboard.js';
+import LandingPage from './components/LandingPage';
+import Signup from './components/Signup';
+import Login from './components/Login';
+import AdminDashboard from './components/AdminDashboard';
 
 function App() {
   return (
