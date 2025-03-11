@@ -39,9 +39,9 @@ Cursos Flix é uma plataforma de streaming de cursos online inspirada na interfa
 
 
 1. Clone o repositório:
-```bash
-'git clone https://github.com/brunopirz/cursos-flix.git
-cd cursos-flix```
+```bash```
+```git clone https://github.com/brunopirz/cursos-flix.git```
+```cd cursos-flix```
 
 Configure as variáveis de ambiente:
 
@@ -60,8 +60,8 @@ Backend API: http://localhost:5000
 
 Verifique os logs:
 
-```docker logs -f cursos-flix-backend
-docker logs -f cursos-flix-frontend```
+```docker logs -f cursos-flix-backend```
+```docker logs -f cursos-flix-frontend```
 
 
 Para parar os contêineres:
@@ -121,9 +121,9 @@ Espero que essas melhorias tenham ajudado a tornar o projeto mais robusto, segur
 
 ### Passo a Passo
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seuusuario/cursos-flix.git
-   cd cursos-flix
+   ```bash```
+   ```git clone https://github.com/seuusuario/cursos-flix.git```
+   ```cd cursos-flix```
 
 Configure as variáveis de ambiente:
 No diretório backend, crie um arquivo .env (veja o exemplo acima).
@@ -132,7 +132,7 @@ No diretório backend, crie um arquivo .env (veja o exemplo acima).
 Execute o Docker Compose:
 
 
-docker-compose up --build
+```docker-compose up --build```
 
 
 Acesse a plataforma:
@@ -147,7 +147,7 @@ Backend API: http://localhost:5000
 Testes Automatizados
 Para rodar testes (caso implementados), acesse o diretório backend e execute:
 
-npm run test
+```npm run test```
 
 Deploy em Produção
 Configure as variáveis de ambiente adequadamente e utilize um serviço de hospedagem como AWS, Google Cloud ou Heroku. Utilize CI/CD (puros GitHub Actions, Jenkins, etc.) para pipeline de deploy.
