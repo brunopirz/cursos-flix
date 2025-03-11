@@ -19,29 +19,29 @@ Cursos Flix é uma plataforma de streaming de cursos online inspirada na interfa
 
 ## Guia de Instalação Atualizado
 
-'sudo apt update && upgrade -y'
+```sudo apt update && upgrade -y```
 
 # Instalando o Docker:
 
-'curl -fsSL https://get.docker.com -o get-docker.sh
+```url -fsSL https://get.docker.com -o get-docker.sh
 
-sudo sh get-docker.sh'
+sudo sh get-docker.sh```
 
 # Instalando MongoDB
 
-'sudo apt-get install -y gnupg curl
+```sudo apt-get install -y gnupg curl
 
 curl -fsSL https://pgp.mongodb.com/server-7.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor
 
 echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
 
-sudo apt-get install -y mongodb-org"
+sudo apt-get install -y mongodb-org```
 
 
 1. Clone o repositório:
 ```bash
 'git clone https://github.com/brunopirz/cursos-flix.git
-cd cursos-flix'
+cd cursos-flix```
 
 Configure as variáveis de ambiente:
 
@@ -49,7 +49,7 @@ No diretório backend, edite um arquivo .env com as variáveis necessárias.
 
 Construa e inicie os contêineres:
 
-'docker-compose up --build'
+```docker-compose up --build```
 
 Acesse a plataforma:
 
@@ -60,13 +60,13 @@ Backend API: http://localhost:5000
 
 Verifique os logs:
 
-'docker logs -f cursos-flix-backend
-docker logs -f cursos-flix-frontend'
+```docker logs -f cursos-flix-backend
+docker logs -f cursos-flix-frontend```
 
 
 Para parar os contêineres:
 
-'docker-compose down'
+```docker-compose down```
 
 Observações
 
