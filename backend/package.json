@@ -10,21 +10,21 @@
     "seed": "node seeders/seed.js"
   },
   "dependencies": {
-    "express": "^4.18.2",                  // Versão estável para criação de APIs
-    "mongoose": "^7.6.8",                  // Gerenciamento e modelagem de dados com MongoDB
-    "jsonwebtoken": "^9.0.0",              // Para geração e validação de tokens JWT
-    "cors": "^2.8.5",                      // Habilita requisições entre domínios (CORS)
-    "helmet": "^6.0.1",                    // Segurança com proteção de headers HTTP
-    "bcryptjs": "^2.4.3",                  // Criptografia de senhas
-    "dotenv": "^16.3.1",                   // Carregamento de variáveis de ambiente
-    "stripe": "^12.22.0"                   // Integração com a API Stripe para pagamentos
+    "express": "^4.18.2",                  # Versão estável para criação de APIs
+    "mongoose": "^7.6.8",                  # Gerenciamento e modelagem de dados com MongoDB
+    "jsonwebtoken": "^9.0.0",              # Para geração e validação de tokens JWT
+    "cors": "^2.8.5",                      # Habilita requisições entre domínios (CORS)
+    "helmet": "^6.0.1",                    # Segurança com proteção de headers HTTP
+    "bcryptjs": "^2.4.3",                  # Criptografia de senhas
+    "dotenv": "^16.3.1",                   # Carregamento de variáveis de ambiente
+    "stripe": "^12.22.0"                   # Integração com a API Stripe para pagamentos
   },
   "devDependencies": {
-    "nodemon": "^3.0.2",                   // Utilitário para reiniciar o servidor em desenvolvimento
-    "jest": "^29.6.4",                     // Framework de testes unitários
-    "typescript": "^5.2.0",                // Tipagem opcional (caso queira migrar para TypeScript)
-    "ts-node": "^10.9.1",                  // Execução de arquivos TypeScript
-    "mongodb-memory-server": "^8.11.1"       // Para criar instância MongoDB em memória durante testes
+    "nodemon": "^3.0.2",                   # Utilitário para reiniciar o servidor em desenvolvimento
+    "jest": "^29.6.4",                     # Framework de testes unitários
+    "typescript": "^5.2.0",                # Tipagem opcional (caso queira migrar para TypeScript)
+    "ts-node": "^10.9.1",                  # Execução de arquivos TypeScript
+    "mongodb-memory-server": "^8.11.1"       # Para criar instância MongoDB em memória durante testes
   },
   "jest": {
     "testEnvironment": "node",
