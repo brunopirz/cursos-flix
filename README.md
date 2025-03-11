@@ -23,19 +23,19 @@ Cursos Flix é uma plataforma de streaming de cursos online inspirada na interfa
 
 # Instalando o Docker:
 
-```url -fsSL https://get.docker.com -o get-docker.sh
+```url -fsSL https://get.docker.com -o get-docker.sh```
 
-sudo sh get-docker.sh```
+```sudo sh get-docker.sh```
 
 # Instalando MongoDB
 
-```sudo apt-get install -y gnupg curl
+```sudo apt-get install -y gnupg curl```
 
-curl -fsSL https://pgp.mongodb.com/server-7.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor
+```curl -fsSL https://pgp.mongodb.com/server-7.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor```
 
-echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+```echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list```
 
-sudo apt-get install -y mongodb-org```
+```sudo apt-get install -y mongodb-org```
 
 
 1. Clone o repositório:
