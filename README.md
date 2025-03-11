@@ -50,9 +50,11 @@ Cursos Flix é uma plataforma de streaming de cursos online inspirada na interfa
 ```sudo apt-get install -y mongodb-org```
 
 
-1. Clone o repositório:
+Clone o repositório:
 ```bash```
+
 ```git clone https://github.com/brunopirz/cursos-flix.git```
+
 ```cd cursos-flix```
 
 Configure as variáveis de ambiente:
