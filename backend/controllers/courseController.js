@@ -1,4 +1,3 @@
-// backend/controllers/courseController.js
 const express = require('express');
 const Course = require('../models/Course');
 const { protect, admin } = require('../middleware/auth');
