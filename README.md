@@ -85,6 +85,9 @@ Para parar os contêineres:
 
 ```docker-compose down```
 
+```npm cache clean --force```
+
+
 Observações
 
 Certifique-se de que o Docker e o Docker Compose estão instalados.
