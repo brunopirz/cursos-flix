@@ -27,6 +27,8 @@ Cursos Flix é uma plataforma de streaming de cursos online inspirada na interfa
 
 ```sudo sh get-docker.sh```
 
+```sudo apt install docker-compose```
+
 # Instalando MongoDB
 
 ```sudo apt-get install -y gnupg curl```
