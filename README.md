@@ -4,6 +4,7 @@
 Cursos Flix é uma plataforma de streaming de cursos online inspirada na interface da Netflix, oferecendo acesso ilimitado a milhares de cursos por apenas R$ 47/mês. O foco está na experiência do usuário, segurança dos dados e conversão de visitantes em assinantes.
 
 ## Requisitos Técnicos
+- **Ubuntu 24.04**
 - **Frontend:** React.js, Tailwind CSS, React Router, Axios.
 - **Backend:** Node.js, Express.js, MongoDB, Mongoose.
 - **Autenticação:** JWT.
