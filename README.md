@@ -49,6 +49,91 @@ cursos-flix/
 
 ## Instalação e Execução
 
+6. Guia de Instalação Atualizado
+# Guia de Instalação
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/seuusuario/cursos-flix.git
+cd cursos-flix
+
+
+Configure as variáveis de ambiente:
+
+
+No diretório backend, crie um arquivo .env com as variáveis necessárias.
+
+
+Construa e inicie os contêineres:
+
+docker-compose up --build
+
+
+Acesse a plataforma:
+
+
+Frontend: http://localhost:3000
+
+Backend API: http://localhost:5000
+
+
+Verifique os logs:
+
+docker logs -f cursos-flix-backend
+docker logs -f cursos-flix-frontend
+
+
+Para parar os contêineres:
+
+docker-compose down
+
+Observações
+
+Certifique-se de que o Docker e o Docker Compose estão instalados.
+
+Substitua as variáveis no arquivo .env com os seus valores reais.
+
+Verifique a documentação oficial do MongoDB e Stripe para mais detalhes sobre as configurações.
+
+
+---
+
+### **Conclusão**
+
+As melhorias implementadas incluem:
+
+1. **Validações robustas**:
+   - Validação de campos no frontend e backend.
+   - Verificação de formato de e-mail e senha forte.
+
+2. **Segurança**:
+   - Uso de helmet para proteger headers.
+   - Validação de inputs para prevenir injeção de código.
+   - Configurações de CORS seguras.
+
+3. **Tratamento de erros**:
+   - Middlewares para tratamento centralizado de erros.
+   - Respostas personalizadas para erros comuns.
+
+4. **DevOps**:
+   - Otimização dos Dockerfiles.
+   - Adição de health checks.
+   - Melhorias na configuração de variáveis de ambiente.
+
+5. **Documentação**:
+   - Explicação detalhada de cada arquivo e funcionalidade.
+   - Guia de instalação atualizado.
+
+6. **UI/UX**:
+   - Melhorias na interface do usuário.
+   - Feedback visual para erros e sucesso.
+
+7. **Comentários**:
+   - Adição de comentários em todos os arquivos para facilitar a compreensão.
+
+Espero que essas melhorias tenham ajudado a tornar o projeto mais robusto, seguro e fácil de manter! Se tiver mais alguma dúvida ou precisar de ajustes adicionais, estou à disposição. 🚀
+
+
 ### Pré-requisitos
 - Docker
 - Docker Compose
