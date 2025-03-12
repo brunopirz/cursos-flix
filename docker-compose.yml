@@ -13,10 +13,11 @@ services:
       - mongo_data:/data/db
     healthcheck:
       test: >
-        CMD-SHELL mongosh --quiet --eval "if(db.runCommand({ ping: 1 }).ok === 1){ exit 0 } else { exit 1 }"
+        mongosh --quiet --eval "if(db.runCommand({ ping: 1 }).ok === 1){ exit 0 } else { exit 1 }"
       interval: 10s
       timeout: 5s
       retries: 5
+
 
 
 
