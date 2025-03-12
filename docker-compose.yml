@@ -12,13 +12,10 @@ services:
       - mongo_data:/data/db
     healthcheck:
       test: >
-        sh -c "mongosh --quiet --eval \"db.runCommand({ ping: 1 }).ok === 1 ? exit 0 : exit 1\""
+        sh -c "mongosh --quiet --eval \"if(db.runCommand({ ping: 1 }).ok === 1){ quit(0); } else { quit(1); }\""
       interval: 10s
       timeout: 5s
       retries: 5
-
-
-
 
   backend:
     build: ./backend
