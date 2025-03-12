@@ -13,11 +13,10 @@ services:
       - mongo_data:/data/db
     healthcheck:
       test: >
-        mongosh --quiet --eval "if(db.runCommand({ ping: 1 }).ok === 1){ exit 0 } else { exit 1 }"
+        sh -c "mongosh --quiet --eval \"db.getSiblingDB('admin').auth('${MONGO_INITDB_ROOT_USERNAME}', '${MONGO_INITDB_ROOT_PASSWORD}') && db.runCommand({ ping: 1 }).ok == 1 ? exit 0 : exit 1\""
       interval: 10s
       timeout: 5s
       retries: 5
-
 
 
 
